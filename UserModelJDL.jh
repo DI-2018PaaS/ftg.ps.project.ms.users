@@ -1,0 +1,44 @@
+entity Utilisateur {
+    username String,
+    utilUniqueid Long required,
+    lastName String,
+    firstName String,
+    mail String,
+    phoneNumber String,
+    password String,
+    creationDateUser Date,
+    lastConnectionDate Date,
+    userActeurID Long
+}
+entity Role {
+    roleUniqueID Long required,
+    roleName String,
+    acteurTypeID Long
+}
+entity Operation {
+    operationUniqueID Long required,
+    operationName String,
+    operationDescription String
+}
+entity RoleOperation {
+}
+
+entity MotDePasse {
+    valeurMotDePasse String required,
+    mdpOwnerUser Long required,
+    lastMotDePasse String,
+    mdpCreationDate Date,
+    mdpLastConnectionDate Date,
+    mdpLastModificationDate Date
+}
+
+relationship OneToMany {
+    Utilisateur{motdePasses} to MotDePasse,
+    Utilisateur{roles} to Role,
+    Role{operations} to Operation
+}
+
+relationship OneToOne {
+    RoleOperation{roleOps} to Operation,
+    RoleOperation{opsRole} to Role
+}
