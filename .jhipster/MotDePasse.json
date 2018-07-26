@@ -1,0 +1,50 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "utilisateur",
+            "otherEntityName": "utilisateur",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "valeurMotDePasse",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "mdpOwnerUser",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "lastMotDePasse",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mdpCreationDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "mdpLastConnectionDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "mdpLastModificationDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20180725194143",
+    "entityTableName": "mot_de_passe",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "users"
+}

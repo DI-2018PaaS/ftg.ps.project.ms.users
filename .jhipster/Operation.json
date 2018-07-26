@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "roleOperation",
+            "otherEntityName": "roleOperation",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "operationUniqueID",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "operationName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "operationDescription",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180725194141",
+    "entityTableName": "operation",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "users"
+}

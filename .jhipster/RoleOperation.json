@@ -1,0 +1,25 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "roleOps",
+            "otherEntityName": "operation",
+            "otherEntityRelationshipName": "roleOperation"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "opsRole",
+            "otherEntityName": "role",
+            "otherEntityRelationshipName": "roleOperation"
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20180725194142",
+    "entityTableName": "role_operation",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "users"
+}

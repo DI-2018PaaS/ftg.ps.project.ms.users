@@ -1,0 +1,69 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "motdePasses",
+            "otherEntityName": "motDePasse",
+            "otherEntityRelationshipName": "utilisateur"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "roles",
+            "otherEntityName": "role",
+            "otherEntityRelationshipName": "utilisateur"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "username",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "utilUniqueid",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "lastName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "firstName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "phoneNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "password",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "creationDateUser",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "lastConnectionDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "userActeurID",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20180725194139",
+    "entityTableName": "utilisateur",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "users"
+}
