@@ -1,13 +1,14 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "ftg.ps.project.ms.user",
+      "packageName": "ftg.ps.project.ms.users",
       "nativeLanguage": "fr"
     },
-    "jhipsterVersion": "4.14.1",
-    "baseName": "users",
-    "packageName": "ftg.ps.project.ms.user",
-    "packageFolder": "ftg/ps/project/ms/user",
+    "jhipsterVersion": "5.1.0",
+    "applicationType": "microservice",
+    "baseName": "user",
+    "packageName": "ftg.ps.project.ms.users",
+    "packageFolder": "ftg/ps/project/ms/users",
     "serverPort": "8081",
     "authenticationType": "uaa",
     "uaaBaseName": "psUAA",
@@ -21,18 +22,16 @@
     "messageBroker": false,
     "serviceDiscoveryType": "eureka",
     "buildTool": "maven",
-    "enableSocialSignIn": false,
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "7ae3d653f05ed9ff57f7966c232a3bb031511208",
+    "jwtSecretKey": "1740dfa627f8e1e9fc6918041fa6675410c15a97",
     "enableTranslation": true,
-    "applicationType": "microservice",
     "testFrameworks": [],
     "jhiPrefix": "jhi",
+    "clientPackageManager": "npm",
     "nativeLanguage": "fr",
     "languages": [
       "fr"
     ],
-    "clientPackageManager": "yarn",
     "skipClient": true,
     "skipUserManagement": true
   }

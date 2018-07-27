@@ -1,19 +1,5 @@
 {
-    "fluentMethods": true,
-    "relationships": [
-        {
-            "relationshipName": "utilisateur",
-            "otherEntityName": "utilisateur",
-            "relationshipType": "many-to-one",
-            "otherEntityField": "id"
-        },
-        {
-            "relationshipName": "roleOperation",
-            "otherEntityName": "roleOperation",
-            "relationshipType": "many-to-one",
-            "otherEntityField": "id"
-        }
-    ],
+    "name": "Role",
     "fields": [
         {
             "fieldName": "roleUniqueID",
@@ -31,11 +17,28 @@
             "fieldType": "Long"
         }
     ],
-    "changelogDate": "20180725194140",
+    "relationships": [
+        {
+            "relationshipName": "utilisateur",
+            "otherEntityName": "utilisateur",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "roleOperation",
+            "otherEntityName": "roleOperation",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180727161555",
     "entityTableName": "role",
     "dto": "no",
     "pagination": "no",
     "service": "no",
     "jpaMetamodelFiltering": false,
-    "microserviceName": "users"
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "user"
 }

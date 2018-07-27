@@ -1,11 +1,11 @@
 version: '2'
 services:
-    users-postgresql:
-        image: postgres:9.6.5
+    user-postgresql:
+        image: postgres:10.4
         # volumes:
-        #     - ~/volumes/jhipster/users/postgresql/:/var/lib/postgresql/data/
+        #     - ~/volumes/jhipster/user/postgresql/:/var/lib/postgresql/data/
         environment:
-            - POSTGRES_USER=users
+            - POSTGRES_USER=user
             - POSTGRES_PASSWORD=
         ports:
             - 5432:5432

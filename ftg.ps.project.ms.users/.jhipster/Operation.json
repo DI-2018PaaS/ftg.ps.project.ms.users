@@ -1,13 +1,5 @@
 {
-    "fluentMethods": true,
-    "relationships": [
-        {
-            "relationshipName": "roleOperation",
-            "otherEntityName": "roleOperation",
-            "relationshipType": "many-to-one",
-            "otherEntityField": "id"
-        }
-    ],
+    "name": "Operation",
     "fields": [
         {
             "fieldName": "operationUniqueID",
@@ -25,11 +17,22 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20180725194141",
+    "relationships": [
+        {
+            "relationshipName": "roleOperation",
+            "otherEntityName": "roleOperation",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180727161556",
     "entityTableName": "operation",
     "dto": "no",
     "pagination": "no",
     "service": "no",
     "jpaMetamodelFiltering": false,
-    "microserviceName": "users"
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "user"
 }

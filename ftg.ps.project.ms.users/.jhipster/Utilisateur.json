@@ -1,19 +1,5 @@
 {
-    "fluentMethods": true,
-    "relationships": [
-        {
-            "relationshipType": "one-to-many",
-            "relationshipName": "motdePasses",
-            "otherEntityName": "motDePasse",
-            "otherEntityRelationshipName": "utilisateur"
-        },
-        {
-            "relationshipType": "one-to-many",
-            "relationshipName": "roles",
-            "otherEntityName": "role",
-            "otherEntityRelationshipName": "utilisateur"
-        }
-    ],
+    "name": "Utilisateur",
     "fields": [
         {
             "fieldName": "username",
@@ -59,11 +45,28 @@
             "fieldType": "Long"
         }
     ],
-    "changelogDate": "20180725194139",
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "motdePasses",
+            "otherEntityName": "motDePasse",
+            "otherEntityRelationshipName": "utilisateur"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "roles",
+            "otherEntityName": "role",
+            "otherEntityRelationshipName": "utilisateur"
+        }
+    ],
+    "changelogDate": "20180727161554",
     "entityTableName": "utilisateur",
     "dto": "no",
     "pagination": "no",
     "service": "no",
     "jpaMetamodelFiltering": false,
-    "microserviceName": "users"
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "user"
 }

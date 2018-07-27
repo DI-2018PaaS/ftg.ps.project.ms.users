@@ -1,13 +1,5 @@
 {
-    "fluentMethods": true,
-    "relationships": [
-        {
-            "relationshipName": "utilisateur",
-            "otherEntityName": "utilisateur",
-            "relationshipType": "many-to-one",
-            "otherEntityField": "id"
-        }
-    ],
+    "name": "MotDePasse",
     "fields": [
         {
             "fieldName": "valeurMotDePasse",
@@ -40,11 +32,22 @@
             "fieldType": "LocalDate"
         }
     ],
-    "changelogDate": "20180725194143",
+    "relationships": [
+        {
+            "relationshipName": "utilisateur",
+            "otherEntityName": "utilisateur",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180727161558",
     "entityTableName": "mot_de_passe",
     "dto": "no",
     "pagination": "no",
     "service": "no",
     "jpaMetamodelFiltering": false,
-    "microserviceName": "users"
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "user"
 }

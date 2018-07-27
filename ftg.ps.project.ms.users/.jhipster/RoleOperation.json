@@ -1,5 +1,6 @@
 {
-    "fluentMethods": true,
+    "name": "RoleOperation",
+    "fields": [],
     "relationships": [
         {
             "relationshipType": "one-to-many",
@@ -14,12 +15,14 @@
             "otherEntityRelationshipName": "roleOperation"
         }
     ],
-    "fields": [],
-    "changelogDate": "20180725194142",
+    "changelogDate": "20180727161557",
     "entityTableName": "role_operation",
     "dto": "no",
     "pagination": "no",
     "service": "no",
     "jpaMetamodelFiltering": false,
-    "microserviceName": "users"
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "user"
 }

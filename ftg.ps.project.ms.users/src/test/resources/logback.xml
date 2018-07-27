@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
 
 <configuration scan="true">
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
-    <logger name="ftg.ps.project.ms.user" level="INFO"/>
+    <logger name="ftg.ps.project.ms.users" level="INFO"/>
 
     <logger name="io.github.jhipster" level="WARN"/>
 
